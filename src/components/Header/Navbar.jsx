@@ -10,6 +10,7 @@ const Navbar = () => {
                     <h2 className='text-2xl font-bold'>CareerHub</h2>
                 </div>
                 <div className='lg:flex gap-10'>
+                    <Link to='/'>Home</Link>
                     <Link to='/statistics'><span className='text-purple-600 font-semibold'>Statistics</span></Link>
                     <Link to='/applied-jobs'><span className='text-gray-500'>Applied Jobs</span></Link>
                     <Link to='/blog'><span className='text-gray-500'>Blog</span></Link>

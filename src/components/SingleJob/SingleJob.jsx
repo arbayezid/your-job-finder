@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const SingleJob = ({ job }) => {
     const { id, companyLogo, companyName, fullOrPartTime, jobTitle, location, remoteOrOnsite,
         salary } = job;
 
+        const navigate = useNavigate();
     return (
         <div >
             <div className='border max-w-xl mt-8 p-10'>
@@ -22,7 +24,7 @@ const SingleJob = ({ job }) => {
                 <p><span className='text-xs px-1 border rounded-full border-gray-600'>$</span> Salaray: {salary}</p>
             </div>
             
-            <button className='btn bg-purple-500 px-4 py-3 text-white font-bold mt-6 rounded'>View Deatils</button>
+            <button  className='btn bg-purple-500 px-4 py-3 text-white font-bold mt-6 rounded'><Link to={`/${id}`}>View Details</Link></button>
             </div>
 
         </div>
