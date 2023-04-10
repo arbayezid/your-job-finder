@@ -8,12 +8,20 @@ import {
 } from "react-router-dom";
 import Main from './components/Layouts/Main';
 import Home from './components/Home/Home';
-import Header from './components/Header/Header';
+import Navbar from './components/Header/Navbar';
+import Banner from './components/Header/Banner';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Header></Header>,
+    element: <Main></Main>,
+    children: [
+      {
+        path: '',
+        element: <Home></Home>,
+        loader: () => fetch('categoryList.json')
+      }
+    ]
 
   },
   
