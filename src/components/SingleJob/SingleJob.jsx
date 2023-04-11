@@ -6,7 +6,7 @@ const SingleJob = ({ job }) => {
     const { id, companyLogo, companyName, fullOrPartTime, jobTitle, location, remoteOrOnsite,
         salary } = job;
 
-        const navigate = useNavigate();
+        
     return (
         <div >
             <div className='border max-w-xl mt-8 p-10'>

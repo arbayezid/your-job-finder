@@ -22,15 +22,15 @@ const addToDB = (id) =>{
 
 
 // Get Stored Cart
-// const getStoredCart = () =>{
-//     let shoppingCart = {};
+const getStoredJob = () =>{
+    let jobs = {};
 
-//     const storedCart = localStorage.getItem('shoppingCart');
-//     if(storedCart){
-//         shoppingCart = JSON.parse(storedCart);
-//     }
-//     return shoppingCart;
+    const previousAppliedJobs = localStorage.getItem('applied-jobs');
+    if(previousAppliedJobs){
+        jobs = JSON.parse(previousAppliedJobs)
+    }
+    return jobs;
 
-// }
+}
 
-export {addToDB}
+export {addToDB, getStoredJob}

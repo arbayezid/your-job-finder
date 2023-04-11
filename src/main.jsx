@@ -12,6 +12,9 @@ import Navbar from './components/Header/Navbar';
 import Banner from './components/Header/Banner';
 import JobDetails from './components/FeaturedJobDetails/JobDetails';
 import FeatureList from './components/FeatureList/FeatureList';
+import AppliedJobs from './components/AppliedJobs/AppliedJobs';
+import { getAllJobs } from './loader/getCart&JobList';
+import AppliedJobList from './components/AppliedJobList/AppliedJobList';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +35,15 @@ const router = createBrowserRouter([
         element: <JobDetails></JobDetails>,
         loader: () => fetch(`/featureList.json`)
       },
+      {
+        path: '/applied-jobs',
+        element: <AppliedJobs></AppliedJobs>,
+        loader: getAllJobs
+      },
+      {
+        path: '/:id',
+        element: <AppliedJobList></AppliedJobList>
+      }
       
     ]
 
