@@ -31,7 +31,7 @@ const JobDetails = () => {
 
     const { salary, jobDescription, jobResponsibility, educationalRequirement, experiences, jobTitle, phone, email, address, id } = details;
     return (
-        <div className='flex max-w-screen-lg mx-auto mt-20 gap-10'>
+        <div className='lg:flex max-w-screen-lg mx-auto mt-20 gap-10'>
             <div className='max-w-screen-sm'>
                 <p className='text-lg text-gray-500 leading-8'><span className='text-black font-bold'>Job Description:</span> {jobDescription}</p>
                 <p className='text-lg text-gray-500 leading-8 mt-6'><span className='text-black font-bold'>Job Responsibility:</span> {jobResponsibility}</p>
