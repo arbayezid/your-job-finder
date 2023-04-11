@@ -5,6 +5,8 @@ import titleIcon from '../../assets/Icons/Frame-1.png'
 import phoneIcon from '../../assets/Icons/Frame-2.png'
 import emailIcon from '../../assets/Icons/Frame-3.png'
 import adrressIcon from '../../assets/Icons/Frame-4.png'
+import { addToDB } from '../../utilities/FakeDB';
+
 
 const JobDetails = () => {
     const [details, setDetails] = useState({})
@@ -21,8 +23,13 @@ const JobDetails = () => {
         }
     }, [])
 
+// Apply Job
+    const handleApplyJob = id =>{
+        addToDB(id);
+    }
 
-    const { salary, jobDescription, jobResponsibility, educationalRequirement, experiences, jobTitle, phone, email, address } = details;
+
+    const { salary, jobDescription, jobResponsibility, educationalRequirement, experiences, jobTitle, phone, email, address, id } = details;
     return (
         <div className='flex max-w-screen-lg mx-auto mt-20 gap-10'>
             <div className='max-w-screen-sm'>
@@ -70,7 +77,7 @@ const JobDetails = () => {
                         </div>
                     </div>
                 </div>
-                <button className='btn bg-purple-500 py-3 text-white font-bold w-full mt-4 rounded'>Apply Now</button>
+                <button onClick={() => handleApplyJob(id)} className='btn bg-purple-500 py-3 text-white font-bold w-full mt-4 rounded'>Apply Now</button>
             </div>
 
 

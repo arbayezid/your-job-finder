@@ -24,7 +24,9 @@ const SingleJob = ({ job }) => {
                 <p><span className='text-xs px-1 border rounded-full border-gray-600'>$</span> Salaray: {salary}</p>
             </div>
             
-            <button  className='btn bg-purple-500 px-4 py-3 text-white font-bold mt-6 rounded'><Link to={`/${id}`}>View Details</Link></button>
+            <Link to={`/${id}`}>
+            <button  className='btn bg-purple-500 px-4 py-3 text-white font-bold mt-6 rounded'>View Details</button>
+            </Link>
             </div>
 
         </div>
