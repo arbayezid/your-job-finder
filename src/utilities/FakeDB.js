@@ -10,10 +10,11 @@ const addToDB = (id) =>{
 
     const quantity = jobs[id];
     if(quantity){
-       toast('Already Applied to this job')
+       toast('You already Applied to this job!!!!!!')
     }
     else{
         jobs[id] = 1;
+        toast('Thank you for applying to this job.')
     }
 
     localStorage.setItem('applied-jobs', JSON.stringify(jobs));

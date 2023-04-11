@@ -9,7 +9,7 @@ const SingleJob = ({ job }) => {
         
     return (
         <div >
-            <div className='border max-w-xl mt-8 p-10'>
+            <div className='border max-w-xl mt-8 p-10 rounded'>
             <img className='w-30 h-10' src={companyLogo} alt="" />
             <h2 className='mt-8 text-xl font-bold text-gray-600'>{jobTitle}</h2>
             <p className='mt-2 text-lg text-gray-500 font-semibold'>{companyName}</p>

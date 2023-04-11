@@ -16,7 +16,7 @@ const Jobcategory = () => {
             <p className='text-sm text-gray-500 mt-3'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
 
-            <div className='flex mx-auto gap-5 mt-8'>
+            <div className='lg:flex mx-auto gap-5 mt-8'>
             {
                 lists.map(list =>
                  <div className='bg-gray-100 py-10 ps-7 pr-12 rounded'>

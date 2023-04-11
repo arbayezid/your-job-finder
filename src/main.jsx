@@ -15,16 +15,15 @@ import FeatureList from './components/FeatureList/FeatureList';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import { getAllJobs } from './loader/getCart&JobList';
 import AppliedJobList from './components/AppliedJobList/AppliedJobList';
+import AssignmentMarkChart from './components/AssignmentMarkChart/AssignmentMarkChart';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
-      // {
-      //   path: '/',
-      //   element: <Navbar></Navbar>
-      // },
       {
         path: '/',
         element: <Home></Home>,
@@ -43,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: '/:id',
         element: <AppliedJobList></AppliedJobList>
+      },
+      {
+        path: '/statistics',
+        element: <AssignmentMarkChart></AssignmentMarkChart>
       }
       
     ]

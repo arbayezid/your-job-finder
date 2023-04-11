@@ -14,7 +14,7 @@ const FeatureList = () => {
 
             <div className='grid lg:grid-cols-2 gap-5 mx-auto max-w-screen-lg'>
                 {
-                    featuredJobs.map(job => <SingleJob
+                    featuredJobs.slice(0,4).map(job => <SingleJob
                     key={job.id}
                     job={job}
                     ></SingleJob>)
