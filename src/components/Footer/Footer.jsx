@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='bg-gray-900 max-w-screen-xl mx-auto rounded'>
+        <div className='bg-gray-900 max-w-screen-2xl mx-auto rounded mt-10'>
             <div className='grid grid-cols-2 lg:grid-cols-5 gap-20 lg:gap-5 mt-20  text-white  p-20 '>
             <div className='text-sm text-gray-400'>
                 <h2 className='text-white font-bold text-2xl mb-4'>CareerHub</h2>
@@ -39,7 +39,7 @@ const Footer = () => {
         <div className='max-w-screen-lg mx-auto mb-4'>
         <hr />
         </div>
-        <div className='flex justify-between max-w-5xl mx-auto text-gray-400'>
+        <div className='flex justify-between max-w-5xl mx-auto text-gray-400 pb-5'>
             <p>@2023 . All Rights Reserved</p>
             <p>Powered by </p>
         </div>

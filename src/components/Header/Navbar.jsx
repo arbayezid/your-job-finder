@@ -10,7 +10,7 @@ const Navbar = () => {
             <div onClick={() => setOpen(!open)} className='lg:hidden bg-gray-100'>
                 <span>{open === true ? <XMarkIcon className="h-6 w-6 text-blue-500" /> : <Bars3Icon className="h-6 w-6 text-blue-500" />}</span>
             </div>
-            <nav className={`lg:flex  justify-around py-10 mx-auto lg:max-w-screen-xl items-center bg-gray-100 absolute lg:static ${open ? 'top-6' : '-left-56'}`}>
+            <nav className={`lg:flex  justify-around py-10 mx-auto lg:max-w-screen-2xl items-center bg-gray-100 absolute lg:static ${open ? 'top-6' : '-left-56'}`}>
                 <div>
                     <h2 className='text-2xl font-bold'>CareerHub</h2>
                 </div>
