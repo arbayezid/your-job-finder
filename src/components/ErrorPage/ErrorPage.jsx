@@ -1,10 +1,8 @@
 import React from 'react';
-import { Link, useRouteError } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import errorLogo from '../../assets/Icons/error.png'
 
-const ErrorPage = () => {
-    const { error, status } = useRouteError()
-    console.log(status)
+const ErrorPage = () => {  
     return (
         <div>
             <section className='flex items-center h-screen p-16 bg-gray-100 text-gray-900'>
@@ -12,14 +10,14 @@ const ErrorPage = () => {
         <img src={errorLogo} alt="" />
         <div className='max-w-md text-center'>
           <h2 className='mb-8 font-extrabold text-9xl text-gray-600'>
-            <span className='sr-only'>Error</span> {status || 404}
+            <span className='sr-only'>Error</span> 404
           </h2>
           <p className='text-2xl font-semibold md:text-3xl mb-8'>
-            {error?.message}
+            Error
           </p>
           <Link
             to='/'
-            className='px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900'
+            className='px-8 py-3 font-semibold rounded bg-gray-300 hover:bg-gray-400 text-gray-900'
           >
             Back to homepage
           </Link>

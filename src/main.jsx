@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
 import './index.css';
 import {
   createBrowserRouter,
@@ -8,10 +7,7 @@ import {
 } from "react-router-dom";
 import Main from './components/Layouts/Main';
 import Home from './components/Home/Home';
-import Navbar from './components/Header/Navbar';
-import Banner from './components/Header/Banner';
 import JobDetails from './components/FeaturedJobDetails/JobDetails';
-import FeatureList from './components/FeatureList/FeatureList';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import { getAllJobs } from './loader/getCart&JobList';
 import AppliedJobList from './components/AppliedJobList/AppliedJobList';

@@ -9,7 +9,7 @@ const Jobcategory = () => {
         .then(data => setLists(data))
     },[])
     return (
-        <div className='mt-20 max-w-screen-lg mx-auto'>
+        <div className='mt-20 lg:max-w-screen-lg sm:max-w-screen-sm mx-auto'>
 
             <div className='text-center'>
             <h2 className='text-3xl font-bold'>Job Category List</h2>
@@ -19,7 +19,7 @@ const Jobcategory = () => {
             <div className='lg:flex mx-auto gap-5 mt-8'>
             {
                 lists.map(list =>
-                 <div className='bg-gray-100 py-10 ps-7 pr-12 rounded'>
+                 <div className='bg-gray-100 py-10 my-5 ps-7 pr-12 rounded'>
                     <div className='bg-gray-200 w-16 rounded'>
                     <img className='py-2 px-3' src={list.categoryLogo} alt="" />
                     </div>

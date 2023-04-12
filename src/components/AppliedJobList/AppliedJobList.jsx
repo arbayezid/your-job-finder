@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import adrressIcon from '../../assets/Icons/Frame-4.png'
 
 const AppliedJobList = ({ jobList }) => {
-    console.log(jobList)
     const { companyLogo, companyName, jobTitle, remoteOrOnsite, fullOrPartTime, location, salary, id } = jobList;
     return (
         <div>

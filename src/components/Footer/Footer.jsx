@@ -5,7 +5,7 @@ const Footer = () => {
         <div className='bg-gray-900 max-w-screen-2xl mx-auto rounded mt-10'>
             <div className='grid grid-cols-2 lg:grid-cols-5 gap-20 lg:gap-5 mt-20  text-white  p-20 '>
             <div className='text-sm text-gray-400'>
-                <h2 className='text-white font-bold text-2xl mb-4'>CareerHub</h2>
+                <h2 className='text-white font-bold text-2xl mb-4'>Your Job Finder</h2>
                 <p>There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</p>
                 <p></p>
             </div>
@@ -40,8 +40,8 @@ const Footer = () => {
         <hr />
         </div>
         <div className='flex justify-between max-w-5xl mx-auto text-gray-400 pb-5'>
-            <p>@2023 . All Rights Reserved</p>
-            <p>Powered by </p>
+            <p>@2023 Your Job Finder. All Rights Reserved</p>
+            <p>Powered by Your Job Finder</p>
         </div>
         </div>
     );
