@@ -4,7 +4,7 @@ const Jobcategory = () => {
     const [lists,setLists] = useState([]);
 
     useEffect(() => {
-        fetch('categoryList.json')
+        fetch('/categoryList.json')
         .then(res => res.json())
         .then(data => setLists(data))
     },[])

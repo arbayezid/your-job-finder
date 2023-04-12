@@ -1,7 +1,7 @@
 import { getStoredJob } from "../utilities/FakeDB";
 
 export const getAllJobs = async() =>{
-    const jobsData = await fetch('featureList.json')
+    const jobsData = await fetch('/featureList.json')
     const jobs = await jobsData.json()
 
     const savedJob = getStoredJob();
